@@ -2320,7 +2320,7 @@ run;
 
 
 ************************************************
-** Visualiser les données **;
+** Visualiser les donnÃ©es **;
 
 * Statistiques descriptives *;
 proc means data=ordaleatoire min max mean stddev;
@@ -2363,7 +2363,7 @@ run;
 
 
 ***************************************************
-** Modèle avec ordonnée aléatoire : One-way ANOVA**;
+** ModÃ¨le avec ordonnÃ©e alÃ©atoire : One-way ANOVA**;
 
 PROC MIXED data=ordaleatoire method=ml covtest;
 class neighid;
@@ -2373,7 +2373,7 @@ run;
 
 
 *******************************************************
-** Modèle avec ordonnée aléatoire : 1 VI de niveau 2 **;
+** ModÃ¨le avec ordonnÃ©e alÃ©atoire : 1 VI de niveau 2 **;
 
 PROC MIXED data=ordaleatoire method=ml covtest;
 class neighid;
