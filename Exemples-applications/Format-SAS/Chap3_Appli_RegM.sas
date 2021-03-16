@@ -1,4 +1,4 @@
-**** ENTRÃ‰E DES DONNÃ‰ES POUR L'EXEMPLE ****;
+**** ENTRÉE DES DONNÉES POUR L'EXEMPLE ****;
 data regmulti;
 	input st	state & $20.	region4	scs134	scs155	crc402	jbs170	pvs501	dms451	scs142	hts384	dms439;
 	cards;
@@ -70,7 +70,7 @@ run;
 proc univariate data=regmulti noprint;
 var scs134 pvs501 ;
 histogram scs134 pvs501 ; run;
-** Graphique de dispersion seulement: procÃ©dure classique **;
+** Graphique de dispersion seulement: procédure classique **;
 proc gplot data=regmulti;
 plot jbs170*scs134 jbs170*pvs501 / noframe;
 run;
